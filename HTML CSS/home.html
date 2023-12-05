@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+      .page-header-large {
+        font-size: 14vw; 
+        margin-top: -18%;
+      }
+
+      .page-header-thin {
+        font-weight:100;
+      }
+
+      .boujee-text {
+        --bg-size: 500%;
+        --color-one: #5438DC;
+        --color-two: #3AECAB;
+        --color-three: #f21d76;
+        --color-four: #f2481d;
+        background: linear-gradient(
+                      90deg,
+                      var(--color-one),
+                      var(--color-two),
+                      var(--color-one),
+                      var(--color-three),
+                      var(--color-four),
+                      var(--color-one)
+                    ) 0 0 / var(--bg-size) 100%;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: move-bg 40s infinite linear;
+      }
+
+      @keyframes move-bg {
+        to {
+        background-position: var(--bg-size) 0;
+        }
+      }
+
+
+    </style>
+  </head>
+
+
+ <body>
+
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="experience.html">Career</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="home.html">Home</a></li>
+      <li class="logo"><img src="images/david-logo.png"></li>
+    </ul>
+    <div>
+      <div class="image-container">
+        <img class="hero-img" src="images/landingpage.png">
+        <a class="button" href="about.html"><div >Get to Know Me</div></a>
+      </div>
+
+      <div class="image-container" style="position:absolute; margin-top: -7.5%; margin-left: -5%; width: 110%">
+        <img src="images/wavy-transition.png">
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 class="header" style="margin-top:20%; margin-left: -1%;">
+        <div class="page-header-thin">
+          Gateway to
+        </div> 
+        <br>
+        <div class="page-header-large boujee-text">
+          Innovation
+        </div>
+      </h1>
+
+      <p style="margin-top: -3%;">
+        Hey there!
+      </p>
+      <p>
+        I'm David Mason, a passionate and creative Computer Engineering major 
+        with a knack for turning ideas into innovative solutions.
+        Pushing the boundaries of my knowledge to create new, 
+        inspired ideas and solutions is what I do.
+        Welcome to my corner of the internet, where I showcase my 
+        skills, projects, and a bit of my personality.
+      </p>
+
+      <br>
+
+      <h1 class="header" style="font-size:6vw">About Me</h1>
+      <p style="margin-top: -3%;">
+        Curious by nature and driven by a love for technology, 
+        I thrive on challenges and continually seek opportunities 
+        to expand my knowledge. With a background in Engineering 
+        and Graphic Design, I am dedicated to pushing the boundaries 
+        of what's possible in beautiful and 
+        exciting new ways.
+      </p>
+
+      <br>
+
+      <h1 class="header" style="font-size:6vw">What I Do</h1>
+      <p style="margin-top: -3%">
+        <b><a class="inline-link" style="display:inline-block;" href="projects.html">🚀 Projects:</a></b> 
+        Dive into a collection of my latest 
+        projects, where I bring ideas to life and demonstrate 
+        my technical prowess. <br><br>
+
+        <b><a class="inline-link" style="display:inline-block;" href="tutorials.html">📘 Tutorials:</a></b> 
+        Explore my tutorials to get insights 
+        into my problem-solving approach and learn alongside me as I
+        constantly seek to expand my knowledge. <br><br>
+
+        <b><a class="inline-link" style="display:inline-block;" href="experience.html">🎓 Education & Career:</a></b> 
+        Discover my academic and 
+        professional journey, showcasing the skills and experiences 
+        that have shaped me into the tech enthusiast I am today.
+      </p>
+
+      <br>
+
+      <h1 class="header" style="font-size:6vw">Let's Connect!</h1>
+      <p style="margin-top: -3%">
+        Whether you're interested in collaboration, have a project 
+        idea, or just want to chat, I'm always open to new 
+        connections. Visit my <a class="inline-link" href="contact.html">Contact</a> page to drop me a message.
+      </p>
+
+      <br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </body>
+</html>
