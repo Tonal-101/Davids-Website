@@ -39,12 +39,148 @@
         }
       }
 
+      .graphic-div {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-top: 5vh;
+        width: 103%;
+        margin-left: -3%;
+        background-size: cover;
+      }
+
+      .graphic-div-header {
+        max-width: 60%;
+        margin-top: 2%;
+        margin-left: 6.5vw;
+        font-size: 2.7vw;
+        transition: 0.5s;
+      }
+      .graphic-div-header:hover {
+        text-shadow: -5px 10px rgb(170, 45, 93);
+        translate: 5px -10px;
+        color: #e0d0ff;
+      }
+
+      .alt-header-shadow {
+        transition: 0.5s;
+      }
+      .alt-header-shadow:hover {
+        text-shadow: -5px 10px rgb(63, 33, 133);
+        translate: 5px -10px;
+        color: #57ffdb;
+      }
+
+      .graphic-body {
+        max-width: 55%;
+        margin-left: 9vw;
+        padding-bottom: 12vw;
+        font-size: 2.7vw;
+        font-weight: 100;
+        transition: 0.2s;
+      }
+      .graphic-body:hover {
+        text-shadow: -1px 2px rgb(170, 45, 93);
+        translate: 1px -2px;
+      }
+
+      .alt-body-shadow {
+        transition: 0.2s;
+      }
+      .alt-body-shadow:hover {
+        text-shadow: -1px 2px rgb(22, 13, 99);
+        translate: 1px -2px;
+      }
+
+      .graphic-transition {
+        margin: 0;
+        padding: 0;
+        margin-left: -10vw;
+        margin-top: -8vw;
+        margin-bottom: -10vw;
+      }
+
+      .graphic-div-header-right {
+        text-align: right;
+        float: right;
+        max-width: 60%;
+        margin-top: 2%;
+        margin-right: 3.5vw;
+        font-size: 2.7vw;
+        transition: 0.5s;
+      }
+      .graphic-div-header-right:hover {
+        text-shadow: 5px -10px rgb(170, 45, 93);
+        translate: -5px 10px;
+        color: #3AECAB;
+      }
+
+      .graphic-body-right {
+        text-align: right;
+        float: right;
+        max-width: 55%;
+        margin-right: 6vw;
+        padding-bottom: 12vw;
+        font-size: 2.7vw;
+        font-weight: 100;
+        transition: 0.2s;
+      }
+      .graphic-body-right:hover {
+        text-shadow: 1px -2px rgb(68, 5, 29);
+        translate: -1px 2px;
+      }
+
+      .card-holder {
+        background-color: #5438DC;
+        height: 55vw;
+        margin-top: 5vw;
+        text-align: center;
+        white-space: nowrap;
+
+        font-size: 2.7vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+      }
+
+      .card {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 22vw;
+        height: 35vw;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 15px 20px 2px rgb(29, 0, 66);
+        display: inline-block;
+        transition: 0.2s;
+
+        background-size: cover;
+      }
+      .card:hover {
+        box-shadow: 0 35px 30px 12px rgb(29, 0, 66);
+        translate: 0 -20px;
+        width: 26vw;
+        margin-left: -1vw;
+        margin-right: -1vw;
+      }
+
+      .card-title {
+        color: black;
+        font-weight: 900;
+        margin-top: 18vw;
+      }
+
+      .card-text {
+        color: black;
+        font-size: 1.5vw;
+        margin-top: -3vw;
+        margin-left: -10%;
+      }
 
     </style>
   </head>
 
 
- <body>
+ <body style="overflow-x: hidden;">
 
     <ul>
       <li><a href="about.html">About</a></li>
@@ -75,62 +211,90 @@
         <div class="page-header-large boujee-text">
           Innovation
         </div>
+        <div class="page-header-large boujee-text" style="margin-top: -10vw;">
+          —
+        </div>
       </h1>
 
-      <p style="margin-top: -3%;">
-        Hey there!
-      </p>
-      <p>
-        I'm David Mason, a passionate and creative Computer Engineering major 
-        with a knack for turning ideas into innovative solutions.
-        Pushing the boundaries of my knowledge to create new, 
-        inspired ideas and solutions is what I do.
-        Welcome to my corner of the internet, where I showcase my 
-        skills, projects, and a bit of my personality.
-      </p>
-
-      <br>
-
-      <h1 class="header" style="font-size:6vw">About Me</h1>
-      <p style="margin-top: -3%;">
-        Curious by nature and driven by a love for technology, 
-        I thrive on challenges and continually seek opportunities 
-        to expand my knowledge. With a background in Engineering 
-        and Graphic Design, I am dedicated to pushing the boundaries 
-        of what's possible in beautiful and 
-        exciting new ways.
-      </p>
-
-      <br>
-
-      <h1 class="header" style="font-size:6vw">What I Do</h1>
-      <p style="margin-top: -3%">
-        <b><a class="inline-link" style="display:inline-block;" href="projects.html">🚀 Projects:</a></b> 
-        Dive into a collection of my latest 
-        projects, where I bring ideas to life and demonstrate 
-        my technical prowess. <br><br>
-
-        <b><a class="inline-link" style="display:inline-block;" href="tutorials.html">📘 Tutorials:</a></b> 
-        Explore my tutorials to get insights 
-        into my problem-solving approach and learn alongside me as I
-        constantly seek to expand my knowledge. <br><br>
-
-        <b><a class="inline-link" style="display:inline-block;" href="experience.html">🎓 Education & Career:</a></b> 
-        Discover my academic and 
-        professional journey, showcasing the skills and experiences 
-        that have shaped me into the tech enthusiast I am today.
-      </p>
-
-      <br>
-
-      <h1 class="header" style="font-size:6vw">Let's Connect!</h1>
-      <p style="margin-top: -3%">
-        Whether you're interested in collaboration, have a project 
-        idea, or just want to chat, I'm always open to new 
-        connections. Visit my <a class="inline-link" href="contact.html">Contact</a> page to drop me a message.
-      </p>
-
-      <br><br><br><br><br><br><br><br><br><br>
+      
+      Here is some text that introduces or something; 
+      Lorem ipsum dolor sit amet, consectetur adipiscing 
+      elit, sed do eiusmod tempor incididunt ut labore et 
+      dolore magna aliqua. Ut enim ad minim veniam, quis 
+      nostrud exercitation ullamco laboris nisi ut aliquip 
+      ex ea commodo consequat. Duis aute irure dolor in 
+      reprehenderit in voluptate velit esse cillum dolore 
+      eu fugiat nulla pariatur. Excepteur sint occaecat 
+      cupidatat non proident, sunt in culpa qui officia 
+      deserunt mollit anim id est laborum.
     </div>
+
+    <div  class="content graphic-div" 
+          style="background-image: url(images/image-graphic1.png); color: white;">
+
+      <div class="graphic-div-header">  
+        <h1>I am David Mason</h1>
+      </div>
+      <div class="graphic-body">
+        Here is some multiline text that is meant to be replaced with actual finalized content. This is just filler. Replace before use.
+      </div>
+    </div>
+
+    <div class="graphic-transition">
+      <img src="images/graphic-transition.png"/>
+    </div>
+
+    <div  class="content graphic-div" 
+          style= "background-image: url(images/image-graphic2.png); 
+                  color: white;
+                  margin-top: 0;">
+
+      <div class="graphic-div-header-right" style="padding-top: 8vw;">  
+        <h1 style="line-height: 80%;">Computer Science <br><b style="font-size: 7vw; font-weight: 100;">×</b> <i style="font-weight: 100;">Graphic Design</i></h1>
+      </div>
+      <div class="graphic-body-right">
+        Here is some multiline text that is meant to be replaced with actual finalized content. This is just filler. Replace before use.
+      </div>
+    </div>
+
+    <div class="graphic-transition">
+      <img src="images/graphic-transition2.png"/>
+    </div>
+
+    <div  class="content graphic-div" 
+          style= "background-image: url(images/image-graphic3.png); 
+                  color: white;
+                  margin-top: 0;">
+
+      <div class="graphic-div-header alt-header-shadow" style="padding-top: 8vw;">  
+        <h1>Projects & Ambitions</h1>
+      </div>
+      <div class="graphic-body alt-body-shadow">
+        Here is some multiline text that is meant to be replaced with actual finalized content. This is just filler. Replace before use.
+      </div>
+    </div>
+
+
+    <div class="card-holder">
+      <h1 style="margin-left: 6vw; padding-top: 1%; text-align: left;">Top Projects</h1>
+        <div class="card" style="background-image: url(images/eagle-project.jpeg);">
+          <p class="card-title">ThreadKind</p>
+          <p class="card-text">Masks n stuff</p>
+        </div>
+        <div class="card" style="background-image: url(images/calc-photo.png);">
+          <p class="card-title">String2Math</p>
+          <p class="card-text">Maths n stuff</p>
+        </div>
+        <div class="card" style="background-image: url(images/html-photo.png);">
+          <p class="card-title">&lt;WebDev&gt;</p>
+          <p class="card-text">HTML n stuff</p>
+        </div>
+    </div>
+
+
+
+    <div style="margin-top: 500px;">
+    </div>
+
   </body>
 </html>
