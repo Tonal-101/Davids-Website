@@ -8,7 +8,7 @@ li:not(#list) {
   width: 12%;
 }
 
-li a:not(#list) {
+li a {
   display: block;
   color: black;
   text-align: center;
@@ -47,6 +47,17 @@ a {
   display: block;
   padding: 8px;
   text-decoration: none;
+}
+
+.link {
+  display: inline;
+  padding: 0;
+  text-decoration: initial;
+  transition: 0.2s;
+}
+
+.link:hover {
+  font-weight: 900;
 }
 
 .inline-link {
@@ -219,7 +230,7 @@ img:not(.hero-img) {
 
 .footer {
   background-color: #412234;
-  height: 200px;
+  height: 250px;
   text-align: center;
   padding-top: 3vh;
   position: relative;
